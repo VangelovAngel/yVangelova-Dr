@@ -20,18 +20,18 @@
       <p class="subtitle">Офталмолог & Естетична медицина</p>
     </div>
 
-    <button class="menu-toggle" aria-label="Меню">
+    <button class="menu-toggle" aria-label="Меню" aria-expanded="false" aria-controls="main-nav">
       <span></span>
       <span></span>
       <span></span>
     </button>
 
-    <nav>
+    <nav id="main-nav">
       <a href="#about">За мен</a>
       <a href="#education">Образование</a>
-      <a href="#qualifications">Квалификации и специализации</a>
+      <a href="#qualifications">Квалификации</a>
       <a href="#services">Услуги</a>
-      <a href="#bio">Биография</a>
+      <a href="#bio">Естетика</a>
       <a href="#contact">Контакти</a>
     </nav>
   </header>
@@ -56,7 +56,7 @@
     </section>
 
     <section id="qualifications" class="card">
-      <h2>Квалификации и специализации</h2>
+      <h2>Квалификации</h2>
       <ul>
         <li>Участие в национални и международни конгреси: iCAMPs, FLORETINA, ESCRS, БДО и др.</li>
         <li>Курсове и обучения:
@@ -74,16 +74,173 @@
 
     <section id="services" class="card">
       <h2>Услуги</h2>
+
       <ul class="services-list">
-        <li>Диагностика и лечение на очни заболявания</li>
-        <li>Лазерни процедури и микрохирургия</li>
-        <li>Естетични процедури: CO₂ лазер, хиалуронови филъри, ботулинов токсин</li>
-        <li>Детски прегледи (над 5 г.)</li>
-      </ul>
+        <!-- purvo -->
+        <li class="service-item">
+          <button class="service-toggle" type="button" aria-expanded="false">
+            <span>Стандартен очен преглед</span>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+
+          <div class="service-content" role="region">
+            <div class="service-content-inner">
+              <div class="service-card">
+                <div class="service-card-head">
+                  
+                  <span class="service-badge">~30–40 мин</span>
+                </div>
+
+                <p class="service-lead">
+                  Подходящ при профилактика, замъглено зрение, главоболие или очен дискомфорт от друго естество.
+                </p>
+
+                <p class="service-desc">
+                  Стандартният очен преглед включва обстоен преглед на зрението и очното здраве, както и време за обсъждане
+                  на резултатите и последващите стъпки.
+                </p>
+
+                <div class="service-meta">
+                  <span class="service-chip"><i class="fa-solid fa-user"></i> Възрастни</span>
+                  <span class="service-chip"><i class="fa-solid fa-child-reaching"></i> Деца над 5 г.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- vtori -->
+
+<li class="service-item">
+  <button class="service-toggle" type="button" aria-expanded="false">
+    <span>Очен преглед при диабет</span>
+    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+  </button>
+
+  <div class="service-content" role="region">
+    <div class="service-content-inner">
+      <div class="service-card">
+        <div class="service-card-head">
+          <span class="service-badge">~40–50 мин</span>
+        </div>
+
+        <p class="service-lead">
+          <strong>Скрининг за диабетна ретинопатия.</strong> Диабетът може да засегне зрението без ранни симптоми.
+          Редовният очен преглед е ключов за навременно откриване на промени в ретината.
+        </p>
+
+        <p class="service-desc" style="margin-bottom:10px;">
+          <strong>Какво включва:</strong>
+        </p>
+
+        <ul class="service-bullets">
+          <li>Оценка на ретиналния статус</li>
+          <li>Ранно откриване на диабетна ретинопатия</li>
+          <li>Определяне на риск и честота на проследяване</li>
+          <li>Писмени препоръки</li>
+        </ul>
+
+        <div class="service-note">
+          Препоръчва се поне веднъж годишно или според индивидуалния риск.
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+
+
+        <!-- treti -->
+
+<li class="service-item">
+  <button class="service-toggle" type="button" aria-expanded="false">
+    <span>Предоперативна консултация</span>
+    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+  </button>
+
+  <div class="service-content" role="region">
+    <div class="service-content-inner">
+      <div class="service-card">
+        <div class="service-card-head">
+          <span class="service-badge">Индивидуално</span>
+        </div>
+
+        <p class="service-lead">
+          Възможност за допълнително мнение при оперативни показания – катаракта,
+          заболявания на ретината и други състояния, налагащи хирургично лечение.
+          Продължителността зависи от конкретния случай.
+        </p>
+
+        <p class="service-desc" style="margin-bottom:10px;">
+          <strong>Какво включва:</strong>
+        </p>
+
+        <ul class="service-bullets">
+          <li>Обстойна оценка на състоянието</li>
+          <li>Обсъждане на показанията за операция</li>
+          <li>Планиране на следващи диагностични или терапевтични стъпки</li>
+          <li>Насочване и подготовка за хирургично лечение при необходимост</li>
+        </ul>
+
+        <div class="service-note">
+          Информирано решение и ясен план.
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+
+        <!-- chetvurti -->
+        <li class="service-item">
+  <button class="service-toggle" type="button" aria-expanded="false">
+    <span>Спешна ретинална консултация</span>
+    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+  </button>
+
+  <div class="service-content" role="region">
+    <div class="service-content-inner">
+      <div class="service-card">
+        <div class="service-card-head">
+          <span class="service-badge">Спешно</span>
+        </div>
+
+        <p class="service-lead">
+          При внезапни зрителни симптоми или съмнение за отлепване на ретината.
+          Осигурява се приоритетен преглед при необходимост.
+        </p>
+
+        <p class="service-desc" style="margin-bottom:10px;">
+          <strong>Подходяща при поява на:</strong>
+        </p>
+
+        <ul class="service-bullets">
+          <li>Светкавици</li>
+          <li>Внезапни „мушици“ или сенки</li>
+          <li>Усещане за „черна завеса“</li>
+          <li>Рязко влошаване на зрението</li>
+        </ul>
+
+        <p class="service-desc" style="margin-bottom:10px;">
+          При тези симптоми е препоръчително бързо медицинско мнение.
+        </p>
+
+        <p class="service-desc" style="margin-bottom:10px;">
+          <strong>Какво включва:</strong>
+        </p>
+
+        <ul class="service-bullets">
+          <li>Оценка на ретиналния статус</li>
+          <li>Преценка за спешност</li>
+          <li>Насочване към хирургично лечение при нужда</li>
+          <li>Координация и проследяване</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</li>
     </section>
 
     <section id="bio" class="card">
-      <h2>Биография</h2>
+      <h2>Естетика</h2>
       <p>Член на Български лекарски съюз, Българско дружество по офталмология и Европейско дружество по катарактална и рефрактивна хирургия (ESCRS).</p>
       <p>Към момента съм част от екипа специалисти на <strong>Център за зрение д-р Групчеви – Варна</strong>.</p>
     </section>
@@ -91,7 +248,13 @@
     <section id="contact" class="card">
       <h2>Контакти</h2>
       <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.019392083087!2d27.915228776457234!3d43.21399787113243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a453ef18346f5d%3A0xd2a2ff6e5f19f5f2!2sul.%20%22Seliolu%22%201%2C%209002%20Varna%20Center%2C%20Varna!5e0!3m2!1sbg!2sbg!4v1690001111111!5m2!1sbg!2sbg" allowfullscreen="" loading="lazy"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.019392083087!2d27.915228776457234!3d43.21399787113243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a453ef18346f5d%3A0xd2a2ff6e5f19f5f2!2sul.%20%22Seliolu%22%201%2C%209002%20Varna%20Center%2C%20Varna!5e0!3m2!1sbg!2sbg!4v1690001111111!5m2!1sbg!2sbg"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Карта - ул. Селиолу 1, Варна"
+        ></iframe>
       </div>
       <p><strong>Телефон:</strong> <a href="tel:+359890155177">+359 890 155 177</a></p>
       <p><strong>Email:</strong> <a href="mailto:dr.yvangelova@gmail.com">dr.yvangelova@gmail.com</a></p>
@@ -102,13 +265,21 @@
 
   <footer>
     <div class="social">
-      <a href="https://www.facebook.com/profile.php?id=61553385333999" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/dr.vangelova_/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/yoana-vangelova-74577a33b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://mail.google.com/mail/?view=cm&to=dr.yvangelova@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i>
-      <a href="https://superdoc.bg/lekar/yoana-vangelova" target="_blank" aria-label="SuperDoc App"> <i class="fa-solid fa-notes-medical"></i>
-
-</a>
+      <a href="https://www.facebook.com/profile.php?id=61553385333999" target="_blank" rel="noopener" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/dr.vangelova_/" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/yoana-vangelova-74577a33b/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:dr.yvangelova@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://superdoc.bg/lekar/yoana-vangelova" target="_blank" rel="noopener" aria-label="SuperDoc App">
+        <i class="fa-solid fa-notes-medical"></i>
+      </a>
     </div>
     <p>© 2025 Д-р Йоана Вангелова. Всички права запазени.</p>
   </footer>
@@ -118,7 +289,8 @@
     const nav = document.querySelector('header nav');
 
     toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
     });
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -126,22 +298,16 @@
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
           if (nav.classList.contains('open')) {
             nav.classList.remove('open');
+            toggle.setAttribute('aria-expanded', 'false');
           }
         }
       });
     });
 
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -100px 0px'
-    };
-
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -100px 0px' };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -151,9 +317,7 @@
       });
     }, observerOptions);
 
-    document.querySelectorAll('.card').forEach(card => {
-      observer.observe(card);
-    });
+    document.querySelectorAll('.card').forEach(card => observer.observe(card));
 
     const navLinks = document.querySelectorAll('nav a');
     const sections = document.querySelectorAll('section[id]');
@@ -162,45 +326,27 @@
       let current = '';
       sections.forEach(section => {
         const sectionTop = section.offsetTop - 100;
-        if (pageYOffset >= sectionTop) {
-          current = section.getAttribute('id');
-        }
+        if (pageYOffset >= sectionTop) current = section.getAttribute('id');
       });
 
       navLinks.forEach(link => {
         link.style.color = '';
-        if (link.getAttribute('href') === `#${current}`) {
-          link.style.color = 'var(--accent)';
-        }
+        if (link.getAttribute('href') === `#${current}`) link.style.color = 'var(--accent)';
       });
     });
 
-    document.addEventListener('mousemove', (e) => {
-      const cards = document.querySelectorAll('.card');
-      cards.forEach(card => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        
-        if (x >= 0 && x <= rect.width && y >= 0 && y <= rect.height) {
-          const xPercent = (x / rect.width - 0.5) * 10;
-          const yPercent = (y / rect.height - 0.5) * 10;
-          card.style.transform = `perspective(1000px) rotateX(${-yPercent}deg) rotateY(${xPercent}deg) translateY(-8px)`;
-        } else {
-          card.style.transform = '';
-        }
-      });
+   
+    document.querySelectorAll('.service-item').forEach(item => {
+      const btn = item.querySelector('.service-toggle');
+
+      const toggleItem = () => {
+        const isOpen = item.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+      };
+
+      btn.addEventListener('click', toggleItem);
     });
   </script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
