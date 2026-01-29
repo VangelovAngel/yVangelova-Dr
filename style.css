@@ -187,6 +187,27 @@ main {
   border-color: rgba(37, 99, 235, 0.3);
 }
 
+/* ===== Added: clickable links in About -> Services ===== */
+.service-link{
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--accent);
+  background: rgba(37, 99, 235, 0.06);
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.service-link:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.12);
+  background: rgba(37, 99, 235, 0.10);
+}
+.service-link:focus-visible{
+  outline: 3px solid rgba(37, 99, 235, 0.35);
+  outline-offset: 2px;
+}
+
 /* ===== Services (FAST animation) ===== */
 .services-list {
   list-style: none;
@@ -255,7 +276,17 @@ main {
 
 .service-item:not(.open) .service-content-inner { padding-bottom: 0; }
 
-/* ===== Added: nicer content card for service #1 ===== */
+/* ===== Added: highlight when jumped via link ===== */
+@keyframes flashRing {
+  0%   { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.0); }
+  25%  { box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.18); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.0); }
+}
+.service-item.flash {
+  animation: flashRing 900ms ease-out;
+}
+
+/* ===== Nicer service cards ===== */
 .service-card {
   margin: 0 0 8px 0;
   padding: 16px;
@@ -467,8 +498,7 @@ footer .social a:hover::before { opacity: 0.3; }
   * { transition: none !important; animation: none !important; }
 }
 
-/* ADD these styles at the END of style.css (they match your existing service-card design) */
-
+/*typotii*/
 .service-bullets {
   margin: 0 0 12px 18px;
   padding: 0;
